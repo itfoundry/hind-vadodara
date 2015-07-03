@@ -922,14 +922,25 @@ lookup blws {
 
   sub gjRA gjmU  by gjRA_mU;
   sub gjRA gjmUU by gjRA_mUU;
-  sub gjHA gjmU  by gjHA_mU;
-  sub gjHA gjmUU by gjHA_mUU;
+  # sub gjHA gjmU  by gjHA_mU;
+  # sub gjHA gjmUU by gjHA_mUU;
 
   sub gjDA  gjmvR by gjDA_mvR;
   sub gjSHA gjmvR by gjSHA_mvR;
-  sub gjHA  gjmvR by gjHA_mvR;
+  # sub gjHA  gjmvR by gjHA_mvR;
 
 } blws;
+
+
+# Post-base Substitution
+# ----------------------
+
+lookup psts {
+  sub gjJA gjmAA by gjJA_mAA;
+  sub gjJ_RA gjmAA by gjJ_RA_mAA;
+  sub gjJA gjmII by gjJA_mII;
+  sub gjJ_RA gjmII by gjJ_RA_mII;
+} psts;
 
 
 # --------------

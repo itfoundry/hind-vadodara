@@ -157,9 +157,9 @@ feature blws {
 # Post-base Substitution
 # ----------------------
 
-# feature psts {
-#   lookup REUSED_matra_ii_matching;
-# } psts;
+feature psts {
+  lookup psts;
+} psts;
 
 
 # Halant Forms
