@@ -8,7 +8,7 @@ kit.confirm_version('2.1.1')
 family = kit.Family(
     client    = 'Google Fonts',
     trademark = 'Hind',
-    script    = 'Bangla',
+    script    = 'Gujarati',
 )
 
 family.set_masters(
@@ -16,6 +16,7 @@ family.set_masters(
         # 'kerning',
         'mark_positioning',
         'mark_to_mark_positioning',
+        'matra_i_variants',
     ],
 )
 
