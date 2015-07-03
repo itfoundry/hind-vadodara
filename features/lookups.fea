@@ -829,27 +829,27 @@ lookup pres_old {
 
 # RA + matra vocalic liquid (mvR/RR/L/LL):
 
-@vocalic_liquids = [gjvR gjvRR gjvL gjvLL];
-@matra_vocalic_liquids = [gjmvR gjmvRR gjmvL gjmvLL];
-
-lookup CONTEXTUAL_ra_to_vocalic_liquid {
-  sub gjRA' gjmvR  by gjvR;
-  sub gjRA' gjmvRR by gjvRR;
-  sub gjRA' gjmvL  by gjvL;
-  sub gjRA' gjmvLL by gjvLL;
-} CONTEXTUAL_ra_to_vocalic_liquid;
-
-lookup CONTEXTUAL_matra_vocalic_liquid_to_reph {
-  sub @matra_vocalic_liquids by gjReph;
-} CONTEXTUAL_matra_vocalic_liquid_to_reph;
-
-lookup abvs_ra_matra_vocalic_liquids {
-  sub
-    gjRA'
-    lookup CONTEXTUAL_ra_to_vocalic_liquid
-    @matra_vocalic_liquids'
-    lookup CONTEXTUAL_matra_vocalic_liquid_to_reph;
-} abvs_ra_matra_vocalic_liquids;
+# @vocalic_liquids = [gjvR gjvRR gjvL gjvLL];
+# @matra_vocalic_liquids = [gjmvR gjmvRR gjmvL gjmvLL];
+#
+# lookup CONTEXTUAL_ra_to_vocalic_liquid {
+#   sub gjRA' gjmvR  by gjvR;
+#   sub gjRA' gjmvRR by gjvRR;
+#   sub gjRA' gjmvL  by gjvL;
+#   sub gjRA' gjmvLL by gjvLL;
+# } CONTEXTUAL_ra_to_vocalic_liquid;
+#
+# lookup CONTEXTUAL_matra_vocalic_liquid_to_reph {
+#   sub @matra_vocalic_liquids by gjReph;
+# } CONTEXTUAL_matra_vocalic_liquid_to_reph;
+#
+# lookup abvs_ra_matra_vocalic_liquids {
+#   sub
+#     gjRA'
+#     lookup CONTEXTUAL_ra_to_vocalic_liquid
+#     @matra_vocalic_liquids'
+#     lookup CONTEXTUAL_matra_vocalic_liquid_to_reph;
+# } abvs_ra_matra_vocalic_liquids;
 
 # General above-base marks:
 
