@@ -1,12 +1,11 @@
 #! /usr/bin/env python
 
-import itfoundrykit as kit
-kit.confirm_version('2.1.1')
+import hindkit as kit
+kit.confirm_version('0.1.1')
 
 # - - -
 
 family = kit.Family(
-    client    = 'Google Fonts',
     trademark = 'Hind',
     script    = 'Gujarati',
 )
@@ -16,7 +15,7 @@ family.set_masters(
         # 'kerning',
         'mark_positioning',
         'mark_to_mark_positioning',
-        'matra_i_variants',
+        'devanagari_matra_i_variants',
     ],
 )
 
@@ -26,7 +25,7 @@ family.set_styles()
 
 builder = kit.Builder(family)
 
-builder.fontrevision = '0.500'
+builder.fontrevision = '0.600'
 
 builder.set_options([
 
