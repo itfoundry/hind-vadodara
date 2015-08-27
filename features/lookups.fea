@@ -328,10 +328,12 @@ lookup pres_decompose {
 
   sub gjE       by gjA gjmE;
   sub gjAI      by gjA gjmAI;
-  sub gjO       by gjA gjmO;
-  sub gjAU      by gjA gjmAU;
   sub gjEcandra by gjA gjmEcandra;
-  sub gjOcandra by gjA gjmOcandra;
+
+  sub gjAA      by gjA gjmAA;
+  sub gjO       by gjA gjmAA gjmE;
+  sub gjAU      by gjA gjmAA gjmAI;
+  sub gjOcandra by gjA gjmAA gjmEcandra;
 
   sub gjmO       by gjmAA gjmE;
   sub gjmAU      by gjmAA gjmAI;
